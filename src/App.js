@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import ResultOverview from './components/Results/Results.jsx';
+import ResultSummary from './components/Summary/Summary.jsx';
+import data from '../src/data/data.json';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <main className="flex justify-center items-center h-screen bg-paleblue overflow-auto">
+    <section className="flex flex-col w-[48em] mx-auto md:grid md:grid-cols-2 h-100 md:h-[32em] md:rounded-[2em] bg-white">
+      <ResultOverview data={data} />
+      <ResultSummary data={data} />
+    </section>
+  </main>
+);
 }
 
 export default App;
