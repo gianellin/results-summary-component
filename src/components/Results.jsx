@@ -1,5 +1,5 @@
 import React from 'react';
-
+import "../App.css";
 
 
 export default function ResultOverview({ data }) {
@@ -12,8 +12,9 @@ export default function ResultOverview({ data }) {
     }
   
     return (
-      <div className="container">
-        <h1 className="">Your result</h1>
+      <div className="result">
+        <h1 className="title">Your result</h1>
+        
         <div className="circle">
           <h2 className="">
             {`${getAverageScore(data)}`}
@@ -29,7 +30,8 @@ export default function ResultOverview({ data }) {
             here!
           </p>
         </div>
-      </div>
+        </div>
+      
     );
   }
 

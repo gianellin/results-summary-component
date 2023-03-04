@@ -1,5 +1,6 @@
 
 import React from 'react';
+import "../App.css";
 
 
 export default function ResultSummary({ data }) {
@@ -8,21 +9,23 @@ export default function ResultSummary({ data }) {
     }
 
   return (
-    <div className="p-3 ">
+    <div className=" summary-container p-3">
       <h4 className="title py-3">Summary</h4>
-      <ul className="flex flex-col gap-3 md:gap-4 list-none md:text-lg">
+      <ul className="lists">
         {data.map(test => {
           return (
             <li
               key={test.category}
               className={`mb-3 ${getCategoryClass(test.category)}`}>
               
-              <div className="Icon">
+              <div>
                 <img src={test.icon} alt="icon"></img>
-                <p>{test.category}</p>
+                <p>
+                    {test.category}
+                </p>
               </div>
 
-              <p className="">
+              <p className="scores">
                 {test.score}
                 <span className="">/100</span>
               </p>
@@ -32,7 +35,7 @@ export default function ResultSummary({ data }) {
         })}
       </ul>
 
-      <button className=" continue btn-primary rounded-5">
+      <button className="btn-primary rounded-5">
         Continue
       </button>
       <br/>
