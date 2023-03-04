@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { ListGroup } from 'react-bootstrap';
+
 
 export default function ResultSummary({ data }) {
     function getCategoryClass(category) {
@@ -32,7 +32,7 @@ export default function ResultSummary({ data }) {
         })}
       </ul>
 
-      <button className="btn-secondary rounded-5">
+      <button className=" continue btn-primary rounded-5">
         Continue
       </button>
       <br/>
