@@ -159,7 +159,7 @@ body{
   padding-right: 1rem;
 }
 /* Button */
-.btn{
+.btn {
   background-color: var(--dark-gray-blue);
   border-radius: 2rem;
   padding: 1rem;

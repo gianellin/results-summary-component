@@ -3,7 +3,7 @@ import React from 'react';
 import "../App.css";
 
 
-export default function ResultSummary({ data }) {
+export default function Summary({ data }) {
     function getCategoryClass(category) {
        return (category)
     }
@@ -35,7 +35,7 @@ export default function ResultSummary({ data }) {
         })}
       </ul>
 
-      <button className="btn-primary rounded-5">
+      <button className="btn p-3 rounded-5">
         Continue
       </button>
       <br/>

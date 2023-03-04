@@ -2,7 +2,7 @@ import React from 'react';
 import "../App.css";
 
 
-export default function ResultOverview({ data }) {
+export default function Result({ data }) {
     function getAverageScore(data) {
       let average = 0;
       average =
