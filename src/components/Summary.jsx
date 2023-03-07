@@ -24,7 +24,7 @@ export default function Summary({ data }) {
                     {test.category}
                 </div>
                 <div className="scores d-flex flex-row p-2 bd-highlight">
-                {test.score} <span> / 100</span>
+                {test.score} <span className="over"> / 100</span>
                 </div>
                
               </div>
@@ -46,33 +46,3 @@ export default function Summary({ data }) {
     </div>
   );
 }
-
-
-{/* <li
-              key={test.category}
-              className={`mb-3 ${getCategoryClass(test.category)}`}>
-              
-              <div>
-                <img src={test.icon} alt="icon"></img>
-                <p>
-                    {test.category}
-                </p>
-              </div>
-
-              <p className="scores">
-                {test.score}
-                <span className="">/100</span>
-              </p>
-
-            </li>
-          );
-        })}
-      </ul>
-
-      <button type="button" className="conti p-3 text-white" >
-        Continue
-      </button>
-      <br/>
-    </div>
-  );
-} */}

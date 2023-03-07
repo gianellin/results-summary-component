@@ -138,31 +138,12 @@ ul {
   padding: 1rem 2rem;
   margin: 2rem;
 }
-.summary span{
+.over{
   font-weight: 800;
-}
-.reaction{
-  background-color: var(--light-red-a);
-}
-.memory{
-  background-color: var(--orangey-yellow-a);
+  color: grey;
+
 }
 
-.verbal{
-  background-color: var(--green-teal-a);
-}
-
-.visual{
-  background-color: var(--cobalt-blue-a);
-}
-
-.icon{
-  display: flex;
-  flex-direction: row;
-}
-.icon img{
-  padding-right: 1rem;
-}
 /* Button */
 .conti {
   background-color: var(--dark-gray-blue);
