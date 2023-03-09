@@ -33,6 +33,7 @@ Users should be able to:
 
 ### Links
 
+- Solution URL: [Frontend Mentor Solution](https://www.frontendmentor.io/challenges/results-summary-component-CE_K6s0maV/hubnft-card-component-with-reactbootstrap-IbPfnzCZfb)
 - Live Site URL: [Demo](https://remarkable-bonbon-7eab40.netlify.app)
 
 ## My process
